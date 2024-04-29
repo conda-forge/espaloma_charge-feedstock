@@ -16,7 +16,7 @@ build:
     - espaloma_charge=espaloma_charge.cli:espaloma_charge
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,7 +27,7 @@ requirements:
     - python >=3.8
     - pytorch
     - rdkit
-    - dgl ==1.1.2
+    - dgl ~=1.1.2
 
 test:
   imports:
