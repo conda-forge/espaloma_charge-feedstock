@@ -27,7 +27,7 @@ requirements:
     - python >=3.8
     - pytorch
     - rdkit
-    - dgl ~=2.
+    - dgl ~=2.0
 
 test:
   imports:
