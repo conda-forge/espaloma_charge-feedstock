@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/espaloma_charge/archive/v{{ version }}.tar.gz
-  sha256: 13c41c8045df4cbe214388a35de31e6c4027de45f833865bb357563991602c9c
+  sha256: 622aaede2d4086d4646ee8ff92f58e441eecb719fbc4557bad5a99db1349f5cf
   patches:
     - 000-update-versioneer.patch
 
