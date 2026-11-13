@@ -1,5 +1,5 @@
 {% set name = "espaloma_charge" %}
-{% set version = "0.0.8" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/espaloma_charge/archive/v{{ version }}.tar.gz
-  sha256: 622aaede2d4086d4646ee8ff92f58e441eecb719fbc4557bad5a99db1349f5cf
+  sha256: f7f73bd6511da4cf5b9d58d4530005fcf68a44a6da9949e2269ab11d1263fb5a
   patches:
     - 000-update-versioneer.patch
 
@@ -16,7 +16,7 @@ build:
     - espaloma_charge=espaloma_charge.cli:espaloma_charge
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 0
 
 requirements:
   host:
