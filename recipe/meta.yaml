@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/choderalab/espaloma_charge/archive/v{{ version }}.tar.gz
   sha256: f7f73bd6511da4cf5b9d58d4530005fcf68a44a6da9949e2269ab11d1263fb5a
-  patches:
-    - 000-update-versioneer.patch
 
 build:
   entry_points:
@@ -27,9 +25,8 @@ requirements:
     - numpy
     - python >={{ python_min }}
     - pytorch
+    - pytorch_geometric
     - rdkit
-    - dgl ~=2.0
-    - torchdata <0.10  # https://github.com/pytorch/data/issues/1196#issuecomment-2542528439
 
 test:
   imports:
