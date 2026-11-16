@@ -1,0 +1,2 @@
+python_min:
+  - "3.12"  # upstream setup.py: python_requires=">=3.12"
